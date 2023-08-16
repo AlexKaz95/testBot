@@ -1,6 +1,6 @@
 <template>
 <Teleport to="body">
-    <div class="wrapper position-absolute bottom-0 end-0 overflow-hidden col-md-6 col-xxl-3 col-xl-4 col-lg-5 col-sm-6 col-xs-12" ref="wrapper">
+    <div class="wrapper position-absolute bottom-0 end-0 overflow-hidden col-md-6 col-xxl-3 col-xl-4 col-lg-5 col-sm-6" ref="wrapper">
       <div 
         class="toggle btn btn-primary w-100"
         @click="togglePopup"
@@ -212,6 +212,12 @@ export default {
 @media (max-height: 500px) {
   .popup{
     height: 80vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper{
+    width: 100%
   }
 }
 </style>
